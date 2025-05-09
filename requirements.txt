@@ -17,16 +17,11 @@ telegraph
 ujson
 pyshorteners
 pytz
-dnspython==2.4.3
 Pillow
 speedtest-cli
 psutil
 shortzy
 fuzzywuzzy
 wheel
-gunicorn==20.1.0
-werkzeug==2.3.0
-Flask==2.3.3
-itsdangerous==2.1.2
 python-Levenshtein
 edge-tts
