@@ -13,33 +13,33 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+API_ID = int(environ.get('API_ID', '26339634'))
+API_HASH = environ.get('API_HASH', 'e0318ca1a4652f9348844203de8f491b')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7504446129:AAE9ExIxyftKqIK6ZlBpXwG_8dc0AOdy_Tg')
 
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5207138613 6570247060 5533079371').split()]
-USERNAME = environ.get('USERNAME', "https://telegram.me/talk_mrs_bot")
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/infinitymoviefiles')
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1989461858  7708455019 ').split()]
+USERNAME = environ.get('USERNAME', "https://telegram.me/Movies24by7bot")
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/ynvmoviesrequest1')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002043045800 -1001866646571').split()]
 
 #database 
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://harishkumargorinta:P6ak9kZKvx33Jx3@movies24.ng58m.mongodb.net/?retryWrites=true&w=majority&appName=Movies24")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Movies24")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002051594756'))
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002215382811'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002290275432'))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002290275432'))
 QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/f21404a4882698d5488dd.jpg')
 START_IMG = environ.get('START_IMG', 'https://graph.org//file/505188b160b4d79a32269.jpg')
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1001964309084'))
-DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1001858701768'))
-URL = environ.get('URL', 'happy-emilee-infinity-movies-hd-movies-hub01-7001d8e5.koyeb.app')
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1002290275432'))
+DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1002290275432'))
+URL = environ.get('URL', '')
 STICKERS_IDS = ('CAACAgQAAxkBAAEK99dlfC7LDqnuwtGRkIoacot_dGC4zQACbg8AAuHqsVDaMQeY6CcRojME').split()
 FILE_AUTO_DEL_TIMER = int(environ.get('FILE_AUTO_DEL_TIMER', '600'))
 
 IS_VERIFY = is_enabled('IS_VERIFY', True)
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002043202934'))
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002290275432'))
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "14400"))
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "28800"))
@@ -61,13 +61,13 @@ YEARS = [f'{i}' for i in range(2025, 2002,-1 )]
 SEASONS = [f'season {i}'for i in range (1 , 23)]
 REF_PREMIUM = 10
 PREMIUM_POINT = 1000
-auth_channel = environ.get('AUTH_CHANNEL', '-1001757701603')
+auth_channel = environ.get('AUTH_CHANNEL', '-1002226636138')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1001732232755'))
 request_channel = environ.get('REQUEST_CHANNEL', '-1001821031247')
 REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else None
 UPI_PAY_LOGS = int(environ.get('UPI_PAY_LOGS', '-1002089150458'))
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1001808193316')) #for channel post 
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002226636138')) #for channel post 
 
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
 PORT = os.environ.get('PORT', '5000')
