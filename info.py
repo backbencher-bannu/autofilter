@@ -34,11 +34,11 @@ QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/f21404a4882698d5488dd.j
 START_IMG = environ.get('START_IMG', 'https://graph.org//file/505188b160b4d79a32269.jpg')
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1002290275432'))
 DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1002290275432'))
-URL = environ.get('URL', '')
+URL = environ.get('URL', 'https://ynvmovies.koyeb.app/')
 STICKERS_IDS = ('CAACAgQAAxkBAAEK99dlfC7LDqnuwtGRkIoacot_dGC4zQACbg8AAuHqsVDaMQeY6CcRojME').split()
 FILE_AUTO_DEL_TIMER = int(environ.get('FILE_AUTO_DEL_TIMER', '600'))
 
-IS_VERIFY = is_enabled('IS_VERIFY', True)
+IS_VERIFY = is_enabled('IS_VERIFY', False)
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002290275432'))
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "14400"))
