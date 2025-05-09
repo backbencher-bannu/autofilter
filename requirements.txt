@@ -1,9 +1,9 @@
 pyrofork
 tgcrypto
-pymongo[srv]==3.12.3
-motor==2.5.1
-marshmallow==3.14.1
-umongo==3.0.1
+pymongo[srv]==5.3.0
+motor==3.3.0
+marshmallow==3.21.1
+umongo==4.5.0
 git+https://github.com/Joelkb/cinemagoer
 Heroku3
 search_engine_parser
@@ -16,10 +16,8 @@ aiohttp
 telegraph
 ujson
 pyshorteners
-datetime
 pytz
-dnspython==2.3.0
-python-math
+dnspython==2.4.3
 Pillow
 speedtest-cli
 psutil
@@ -27,8 +25,8 @@ shortzy
 fuzzywuzzy
 wheel
 gunicorn==20.1.0
-werkzeug==2.0.2
-Flask
-itsdangerous==2.0.1
+werkzeug==2.3.0
+Flask==2.3.3
+itsdangerous==2.1.2
 python-Levenshtein
 edge-tts
